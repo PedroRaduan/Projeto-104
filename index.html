@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconhecimento Facial</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+</head>
+
+<body>
+    <center>
+    <div class="tudo">
+    <p class="titulo">Reconhecimento <span class="sim"> MAX </span></p>
+    <p class="t">Vai identificar</p>
+    <div class="nomes">
+        
+    <p class="tem">Sharif</p>
+    <p class="tem">Julia</p>
+    <p class="tem">Pedro</p>
+    <p class="tem">Emile</p>
+
+</div>
+    <div id="camera"></div>
+    <div id="resultados"></div>
+    <button onclick="tirar()" class="btn">Tirar foto</button>
+    <button onclick="checar()" class="btn">Identificar</button>
+    <p class="text">Pessoa: <span id="pessoa"></span></p>
+    <p class="text">Precisão: <span id="precisao"></span></p>
+</div>
+</center>
+<script src="app.js"></script>
+</body>
+</html>
